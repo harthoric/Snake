@@ -1,2 +1,2 @@
 # Snake
-Simple snake game written in a JavaFX
+Simple snake game made using JavaFX
