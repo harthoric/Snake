@@ -4,7 +4,7 @@ import com.harthoric.snake.util.Vector2D;
 
 public class Entity {
 
-	private Velocity velocity;
+	private Vector2D velocity;
 
 	private static final Vector2D UP = new Vector2D(0, -1), DOWN = new Vector2D(0, 1), LEFT = new Vector2D(-1, 0),
 			RIGHT = new Vector2D(1, 0);
