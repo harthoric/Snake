@@ -1,23 +1,23 @@
 package com.harthoric.snake.entity;
 
-import com.harthoric.snake.util.Velocity;
+import com.harthoric.snake.util.Vector2D;
 
 public class Entity {
 
 	private Velocity velocity;
 
-	private static final Velocity UP = new Velocity(0, -1), DOWN = new Velocity(0, 1), LEFT = new Velocity(-1, 0),
-			RIGHT = new Velocity(1, 0);
+	private static final Vector2D UP = new Vector2D(0, -1), DOWN = new Vector2D(0, 1), LEFT = new Vector2D(-1, 0),
+			RIGHT = new Vector2D(1, 0);
 
-	public Entity(Velocity velocity) {
+	public Entity(Vector2D velocity) {
 		this.velocity = velocity;
 	}
 
-	public Velocity getVelocity() {
+	public Vector2D getVelocity() {
 		return velocity;
 	}
 
-	public void setVelocity(Velocity velocity) {
+	public void setVelocity(Vector2D velocity) {
 		this.velocity = velocity;
 	}
 
