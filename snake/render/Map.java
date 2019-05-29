@@ -10,7 +10,7 @@ import java.util.Random;
 
 import com.harthoric.snake.entity.Snake;
 import com.harthoric.snake.util.Point;
-import com.harthoric.snake.util.Velocity;
+import com.harthoric.snake.util.Vector2D;
 
 public class Map {
 	public static final int SIZE = 10;
@@ -25,7 +25,7 @@ public class Map {
 	public Map(final int width, final int height) {
 		rows = width / SIZE;
 		columns = height / SIZE;
-		snake = new Snake(this, new Point(rows / 10 / 2, columns / 10 / 2), new Velocity(0, 0), false);
+		snake = new Snake(this, new Point(rows / 10 / 2, columns / 10 / 2), new Vector2D(0, 0), false);
 		RandomPoint();
 	}
 
