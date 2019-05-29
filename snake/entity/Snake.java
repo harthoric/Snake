@@ -7,7 +7,7 @@ import java.util.List;
 
 import com.harthoric.snake.render.Map;
 import com.harthoric.snake.util.Point;
-import com.harthoric.snake.util.Velocity;
+import com.harthoric.snake.util.Vector2D;
 
 public class Snake extends Entity {
 	public static final Color DEAD = Color.RED;
@@ -18,7 +18,7 @@ public class Snake extends Entity {
 	private Point head;
 	private Map map;
 
-	public Snake(Map map, Point head, Velocity velocity, boolean allowWrap) {
+	public Snake(Map map, Point head, Vector2D velocity, boolean allowWrap) {
 		super(velocity);
 		this.map = map;
 		this.head = head;
